@@ -26,12 +26,10 @@
 
   <table class="table">
     <thead>
-      <tr data-ng-repeat="superhero in vm.data | filter: vm.filter_on">
-        <div class=ng-if"">
+      <tr class="{{superhero.group | lowercase}}" data-ng-repeat="superhero in vm.data | filter: vm.filter_on">
           <th><button class="btn" data-ng-click="vm.pic = superhero.img">{{superhero.name}}</button></th>
           <th>Number: {{superhero.number}}</th>
           <th> {{superhero.group}}</th>
-        </div>
       </tr>
     </thead>
     <tbody>
