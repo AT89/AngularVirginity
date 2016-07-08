@@ -13,3 +13,12 @@
 .picture img {
   width: 300px;
 }
+.search{
+  max-width: 400px;
+}
+.herosearchbar{
+  width: 300px;
+}
+.btn{
+  width: 150px;
+}
